@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
@@ -100,39 +99,336 @@ const WorkflowCard = ({ title, position }: { title: string, position: string }) 
     </div>
 );
 
+/* ============================================
+   MEET STACKED SECTION - Feature Cards
+   ============================================ */
+
+const MeetStackedSection = () => (
+    <section className="meet-stacked-section">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Section Header */}
+            <div className="text-center mb-12">
+                <div className="meet-stacked-badge">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0L9.79611 6.20389L16 8L9.79611 9.79611L8 16L6.20389 9.79611L0 8L6.20389 6.20389L8 0Z" fill="#1A332B"/>
+                    </svg>
+                    <span>Meet Stacked</span>
+                </div>
+                <h2 className="meet-stacked-title">Built for Smarter Lending Operations</h2>
+                <p className="meet-stacked-subtitle">
+                    Everything you need to automate workflows, reduce risk, and scale lending efficiently.
+                </p>
+            </div>
+
+            {/* Feature Cards Grid */}
+            <div className="feature-cards-grid">
+                {/* Card 1: Reinvent Lending Workflows */}
+                <div className="feature-card feature-card-workflows">
+                    <h3 className="feature-card-title">Reinvent Lending<br/>Workflows</h3>
+                    <p className="feature-card-description">
+                        Automate intake, underwriting, and approvals to work faster and fund more clients easily.
+                    </p>
+                    <div className="feature-card-visual workflows-visual">
+                        <div className="stacked-logo-icon">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35 10H10V35H35V10Z" fill="#1A332B"/>
+                                <path d="M70 10H45V35H70V10Z" fill="#1A332B"/>
+                                <path d="M35 45H10V70H35V45Z" fill="#1A332B"/>
+                                <path d="M70 45H45V70H70V45Z" fill="#D4FF73"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Card 2: Real-Time Document Analysis */}
+                <div className="feature-card feature-card-documents">
+                    <h3 className="feature-card-title">Real-Time Document<br/>Analysis</h3>
+                    <p className="feature-card-description">
+                        Instantly scan and validate all financial docs with OCR intelligence. Fast, accurate, and complete.
+                    </p>
+                    <div className="feature-card-visual documents-visual">
+                        <div className="document-checklist">
+                            <div className="document-item">
+                                <div className="document-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" stroke="#6B7280" strokeWidth="2"/>
+                                        <path d="M7 10H17M7 14H17" stroke="#6B7280" strokeWidth="2" strokeLinecap="round"/>
+                                    </svg>
+                                </div>
+                                <span className="document-label">Bank Statements</span>
+                                <svg className="document-check" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 13L9 17L19 7" stroke="#22C55E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                            </div>
+                            <div className="document-item">
+                                <div className="document-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="4" y="4" width="16" height="16" rx="2" stroke="#6B7280" strokeWidth="2"/>
+                                        <circle cx="12" cy="10" r="3" stroke="#6B7280" strokeWidth="2"/>
+                                        <path d="M6 20C6 17.2386 8.68629 15 12 15C15.3137 15 18 17.2386 18 20" stroke="#6B7280" strokeWidth="2"/>
+                                    </svg>
+                                </div>
+                                <span className="document-label">User IDs</span>
+                                <svg className="document-check" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 13L9 17L19 7" stroke="#22C55E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                            </div>
+                            <div className="document-item document-item-processing">
+                                <div className="document-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="#6B7280" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                    </svg>
+                                </div>
+                                <span className="document-label">Tax Documents...</span>
+                                <div className="document-spinner">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2V6M12 18V22M4.93 4.93L7.76 7.76M16.24 16.24L19.07 19.07M2 12H6M18 12H22M4.93 19.07L7.76 16.24M16.24 7.76L19.07 4.93" stroke="#9CA3AF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="document-progress">
+                            <div className="progress-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="#D1D5DB" strokeWidth="2"/>
+                                    <path d="M12 6V12L16 14" stroke="#D1D5DB" strokeWidth="2" strokeLinecap="round"/>
+                                </svg>
+                            </div>
+                            <span>Analyzing Documents...</span>
+                            <div className="progress-bar">
+                                <div className="progress-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Card 3: Automatic Agentic AI Follow-Up */}
+                <div className="feature-card feature-card-followup">
+                    <h3 className="feature-card-title">Automatic Agentic<br/>AI Follow-Up</h3>
+                    <p className="feature-card-description">
+                        Automatically tracks applications, detects missing info, and triggers smart follow-ups for 100% completion.
+                    </p>
+                    <div className="feature-card-visual followup-visual">
+                        <div className="followup-checklist">
+                            <div className="followup-item">
+                                <div className="followup-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="10" stroke="#6B7280" strokeWidth="2"/>
+                                        <path d="M12 6V12L16 14" stroke="#6B7280" strokeWidth="2" strokeLinecap="round"/>
+                                    </svg>
+                                </div>
+                                <span className="followup-label">Tracking Application</span>
+                                <svg className="followup-check" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 13L9 17L19 7" stroke="#22C55E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                            </div>
+                            <div className="followup-item">
+                                <div className="followup-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" stroke="#6B7280" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                        <line x1="12" y1="9" x2="12" y2="13" stroke="#6B7280" strokeWidth="2" strokeLinecap="round"/>
+                                        <line x1="12" y1="17" x2="12.01" y2="17" stroke="#6B7280" strokeWidth="2" strokeLinecap="round"/>
+                                    </svg>
+                                </div>
+                                <span className="followup-label">Detecting Missing Info</span>
+                                <svg className="followup-check" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 13L9 17L19 7" stroke="#22C55E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                            </div>
+                            <div className="followup-item followup-item-processing">
+                                <div className="followup-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="#6B7280" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                    </svg>
+                                </div>
+                                <span className="followup-label">Following Up with Client...</span>
+                                <div className="followup-spinner">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2V6M12 18V22M4.93 4.93L7.76 7.76M16.24 16.24L19.07 19.07M2 12H6M18 12H22M4.93 19.07L7.76 16.24M16.24 7.76L19.07 4.93" stroke="#9CA3AF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="followup-channels">
+                            <span className="channels-label">Follow up via:</span>
+                            <div className="channels-list">
+                                <div className="channel-item">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#6B7280" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                        <polyline points="22,6 12,13 2,6" stroke="#6B7280" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                    </svg>
+                                    <span>Email</span>
+                                </div>
+                                <div className="channel-item">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="#6B7280" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                    </svg>
+                                    <span>SMS</span>
+                                </div>
+                                <div className="channel-item">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="10" stroke="#6B7280" strokeWidth="2"/>
+                                        <circle cx="12" cy="12" r="4" stroke="#6B7280" strokeWidth="2"/>
+                                        <line x1="4.93" y1="4.93" x2="9.17" y2="9.17" stroke="#6B7280" strokeWidth="2"/>
+                                        <line x1="14.83" y1="14.83" x2="19.07" y2="19.07" stroke="#6B7280" strokeWidth="2"/>
+                                        <line x1="14.83" y1="9.17" x2="19.07" y2="4.93" stroke="#6B7280" strokeWidth="2"/>
+                                        <line x1="4.93" y1="19.07" x2="9.17" y2="14.83" stroke="#6B7280" strokeWidth="2"/>
+                                    </svg>
+                                    <span>Portal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+);
+
+/* ============================================
+   PACKS SECTION - Zigzag Layout
+   ============================================ */
+
+const PacksSection = () => (
+    <section className="packs-section">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Section Header */}
+            <div className="text-center mb-16">
+                <div className="packs-badge">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0L9.79611 6.20389L16 8L9.79611 9.79611L8 16L6.20389 9.79611L0 8L6.20389 6.20389L8 0Z" fill="#D4FF73"/>
+                    </svg>
+                    <span>Packs</span>
+                </div>
+                <h2 className="packs-title">
+                    <span className="text-[#D4FF73]">From Intake to Funding,</span>{' '}
+                    <span className="text-gray-400">Each Pack<br/>Powers a Step in the Lending Journey</span>
+                </h2>
+                <p className="packs-subtitle">
+                    Stacked is modular by design. Each Pack automates a layer of your lending operation. And together, they form your complete agentic ecosystem.
+                </p>
+            </div>
+
+            {/* Packs Timeline */}
+            <div className="packs-timeline">
+                {/* Vertical Line */}
+                <div className="timeline-line"></div>
+
+                {/* Pack 1: Application Pack - Left */}
+                <div className="pack-row pack-row-left">
+                    <div className="pack-card">
+                        <div className="pack-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="3" y="3" width="7" height="7" rx="1" stroke="#1A332B" strokeWidth="2"/>
+                                <rect x="14" y="3" width="7" height="7" rx="1" stroke="#1A332B" strokeWidth="2"/>
+                                <rect x="3" y="14" width="7" height="7" rx="1" stroke="#1A332B" strokeWidth="2"/>
+                                <rect x="14" y="14" width="7" height="7" rx="1" stroke="#1A332B" strokeWidth="2"/>
+                            </svg>
+                        </div>
+                        <h3 className="pack-title">Application Pack</h3>
+                        <p className="pack-description">Smart forms, intake routing, real-time validation.</p>
+                    </div>
+                    <div className="pack-label-container">
+                        <div className="pack-dot"></div>
+                        <span className="pack-label">Application Intake</span>
+                    </div>
+                </div>
+
+                {/* Pack 2: Automation Pack - Right */}
+                <div className="pack-row pack-row-right">
+                    <div className="pack-label-container">
+                        <span className="pack-label">Document & Bank Analysis</span>
+                        <div className="pack-dot"></div>
+                    </div>
+                    <div className="pack-card">
+                        <div className="pack-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="3" stroke="#1A332B" strokeWidth="2"/>
+                                <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" stroke="#1A332B" strokeWidth="2"/>
+                            </svg>
+                        </div>
+                        <h3 className="pack-title">Automation Pack</h3>
+                        <p className="pack-description">OCR parsing, Plaid integration, financial summaries.</p>
+                    </div>
+                </div>
+
+                {/* Pack 3: Decisioning Pack - Left */}
+                <div className="pack-row pack-row-left">
+                    <div className="pack-card">
+                        <div className="pack-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2" stroke="#1A332B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                <rect x="8" y="2" width="8" height="4" rx="1" stroke="#1A332B" strokeWidth="2"/>
+                                <path d="M9 12l2 2 4-4" stroke="#1A332B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 className="pack-title">Decisioning Pack</h3>
+                        <p className="pack-description">Rule engine, scorecards, AI-assisted decision support.</p>
+                    </div>
+                    <div className="pack-label-container">
+                        <div className="pack-dot"></div>
+                        <span className="pack-label">Qualification & Decision</span>
+                    </div>
+                </div>
+
+                {/* Pack 4: Affiliate Pack - Right */}
+                <div className="pack-row pack-row-right">
+                    <div className="pack-label-container">
+                        <span className="pack-label">Partner Management</span>
+                        <div className="pack-dot"></div>
+                    </div>
+                    <div className="pack-card">
+                        <div className="pack-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="#1A332B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                <circle cx="9" cy="7" r="4" stroke="#1A332B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="#1A332B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 className="pack-title">Affiliate Pack</h3>
+                        <p className="pack-description">Referral analytics, commission automation.</p>
+                    </div>
+                </div>
+
+                {/* Pack 5: Integration Pack - Left */}
+                <div className="pack-row pack-row-left">
+                    <div className="pack-card">
+                        <div className="pack-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2" stroke="#1A332B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                <polyline points="2 17 12 22 22 17" stroke="#1A332B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                <polyline points="2 12 12 17 22 12" stroke="#1A332B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 className="pack-title">Integration Pack</h3>
+                        <p className="pack-description">APIs, Salesforce sync, webhooks, ActiveCampaign automation.</p>
+                    </div>
+                    <div className="pack-label-container">
+                        <div className="pack-dot"></div>
+                        <span className="pack-label">Connectivity</span>
+                    </div>
+                </div>
+            </div>
+
+            {/* Explore Packs Button */}
+            <div className="text-center mt-16">
+                <Link to="/packs" className="explore-packs-btn">
+                    Explore Packs
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                </Link>
+            </div>
+        </div>
+    </section>
+);
+
 const Home = () => {
     return (
         <div>
             <HeroSection />
-            
-            {/* Placeholder for other sections */}
-            <section className="py-24 bg-[#F5F7F5] text-black text-center">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-4xl font-semibold">More Sections Coming Soon...</h2>
-                    <p className="mt-4 text-lg text-gray-600">This is a placeholder for sections like Features, Testimonials, etc.</p>
-                     <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div className="p-8 border border-gray-200 rounded-2xl">
-                            <h3 className="text-2xl font-semibold">Reinvent Lending Workflows</h3>
-                            <p className="mt-2 text-gray-600">Automate intake, underwriting, and approvals to work faster and fund more clients easily.</p>
-                        </div>
-                        <div className="p-8 border border-gray-200 rounded-2xl">
-                            <h3 className="text-2xl font-semibold">Real-Time Document Analysis</h3>
-                            <p className="mt-2 text-gray-600">Instantly scan and validate all financial docs with OCR intelligence. Fast, accurate, and complete.</p>
-                        </div>
-                        <div className="p-8 border border-gray-200 rounded-2xl">
-                            <h3 className="text-2xl font-semibold">Automatic Agentic AI Follow-Up</h3>
-                            <p className="mt-2 text-gray-600">Automatically tracks applications, detects missing info, and triggers smart follow-ups for 100% completion.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-             <section className="py-24 bg-[#0A0F0D] text-white text-center">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-4xl font-semibold">From Intake to Funding</h2>
-                    <p className="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">Each Pack Powers a Step in the Lending Journey</p>
-                </div>
-            </section>
+            <MeetStackedSection />
+            <PacksSection />
         </div>
     );
 };
