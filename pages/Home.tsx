@@ -558,6 +558,193 @@ const WhyStackedSection = () => (
     </section>
 );
 
+/* ============================================
+   STACKED CORE SECTION
+   ============================================ */
+
+const StackedCoreSection = () => (
+    <section className="stacked-core-section">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Section Header */}
+            <div className="text-center mb-8">
+                <div className="core-badge">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0L9.79611 6.20389L16 8L9.79611 9.79611L8 16L6.20389 9.79611L0 8L6.20389 6.20389L8 0Z" fill="#D4FF73"/>
+                    </svg>
+                    <span>Stacked Core</span>
+                </div>
+                <h2 className="core-title">
+                    Meet Stacked Core,<br/>The Orchestration Layer
+                </h2>
+                <p className="core-subtitle">
+                    The orchestration layer that runs every Pack.
+                </p>
+            </div>
+
+            {/* Orbital Diagram */}
+            <div className="core-orbital-container">
+                {/* Glow Effect */}
+                <div className="core-glow"></div>
+                
+                {/* Dotted Orbit Circle */}
+                <svg className="orbit-circle" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="200" cy="200" r="140" stroke="rgba(255,255,255,0.2)" strokeWidth="1" strokeDasharray="4 6"/>
+                </svg>
+
+                {/* Center Core */}
+                <div className="core-center">
+                    <span>Core</span>
+                </div>
+
+                {/* Orbital Nodes */}
+                <div className="orbital-node node-perceive">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="#6B7280" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        <circle cx="12" cy="12" r="3" stroke="#6B7280" strokeWidth="2"/>
+                    </svg>
+                    <span>Perceive</span>
+                </div>
+
+                <div className="orbital-node node-reason">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3H5a2 2 0 00-2 2v3m18 0V5a2 2 0 00-2-2h-3m0 18h3a2 2 0 002-2v-3M3 16v3a2 2 0 002 2h3" stroke="#6B7280" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <span>Reason</span>
+                </div>
+
+                <div className="orbital-node node-act">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" stroke="#6B7280" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <span>Act</span>
+                </div>
+
+                <div className="orbital-node node-learn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="3" y="3" width="7" height="7" rx="1" stroke="#6B7280" strokeWidth="2"/>
+                        <rect x="14" y="3" width="7" height="7" rx="1" stroke="#6B7280" strokeWidth="2"/>
+                        <rect x="3" y="14" width="7" height="7" rx="1" stroke="#6B7280" strokeWidth="2"/>
+                        <rect x="14" y="14" width="7" height="7" rx="1" stroke="#6B7280" strokeWidth="2"/>
+                    </svg>
+                    <span>Learn</span>
+                </div>
+            </div>
+
+            {/* Description */}
+            <p className="core-description">
+                Stacked Core is the intelligence layer connecting all Stacked Packs. It perceives, reasons, and acts across your data. Ensuring every document, application, and decision flows without friction.
+            </p>
+
+            {/* Feature Items */}
+            <div className="core-features">
+                <div className="core-feature-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="3" y="3" width="18" height="18" rx="2" stroke="#6B7280" strokeWidth="2"/>
+                        <path d="M7 10h10M7 14h10" stroke="#6B7280" strokeWidth="2" strokeLinecap="round"/>
+                    </svg>
+                    <span>Understands document and bank data instantly</span>
+                </div>
+                <div className="core-feature-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" stroke="#6B7280" strokeWidth="2"/>
+                        <rect x="9" y="3" width="6" height="4" rx="1" stroke="#6B7280" strokeWidth="2"/>
+                        <path d="M9 12l2 2 4-4" stroke="#6B7280" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <span>Applies context-aware qualification logic</span>
+                </div>
+                <div className="core-feature-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="18" cy="5" r="3" stroke="#6B7280" strokeWidth="2"/>
+                        <circle cx="6" cy="12" r="3" stroke="#6B7280" strokeWidth="2"/>
+                        <circle cx="18" cy="19" r="3" stroke="#6B7280" strokeWidth="2"/>
+                        <path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98" stroke="#6B7280" strokeWidth="2"/>
+                    </svg>
+                    <span>Automates routing and communication across teams</span>
+                </div>
+                <div className="core-feature-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23 6l-9.5 9.5-5-5L1 18" stroke="#6B7280" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        <path d="M17 6h6v6" stroke="#6B7280" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <span>Improves continuously with every submission outcome</span>
+                </div>
+            </div>
+
+            {/* CTA Button */}
+            <div className="text-center mt-12">
+                <Link to="/core" className="core-cta-btn">
+                    <span className="core-cta-text">See How Stacked Core Works</span>
+                    <span className="core-cta-arrow">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#1A332B" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </span>
+                </Link>
+            </div>
+        </div>
+    </section>
+);
+
+/* ============================================
+   RESULTS SECTION
+   ============================================ */
+
+const ResultsSection = () => (
+    <section className="results-section">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="results-grid">
+                {/* Left Card - Title */}
+                <div className="results-title-card">
+                    <h2>The Results Speak for Themselves</h2>
+                </div>
+
+                {/* Right Card - Stats */}
+                <div className="results-stats-card">
+                    <div className="stats-grid">
+                        <div className="stat-item">
+                            <div className="stat-value">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#D4FF73" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                                <span>40%</span>
+                            </div>
+                            <p className="stat-label">Higher Completion Rate</p>
+                        </div>
+                        <div className="stat-item">
+                            <div className="stat-value">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#D4FF73" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                                <span>3x</span>
+                            </div>
+                            <p className="stat-label">Approval Lift</p>
+                        </div>
+                        <div className="stat-item">
+                            <div className="stat-value">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 7L17 17M17 17H7M17 17V7" stroke="#D4FF73" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                                <span>90%</span>
+                            </div>
+                            <p className="stat-label">Less Manual Work</p>
+                        </div>
+                        <div className="stat-item">
+                            <div className="stat-value">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 7L17 17M17 17H7M17 17V7" stroke="#D4FF73" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                                <span>80%</span>
+                            </div>
+                            <p className="stat-label">Fewer Support Calls</p>
+                        </div>
+                    </div>
+                    <p className="stats-footnote">Based on internal pilot data, last 90 days.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+);
+
 const Home = () => {
     return (
         <div>
@@ -565,6 +752,8 @@ const Home = () => {
             <MeetStackedSection />
             <PacksSection />
             <WhyStackedSection />
+            <StackedCoreSection />
+            <ResultsSection />
         </div>
     );
 };
