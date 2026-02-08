@@ -74,32 +74,250 @@
 
 /* Integration Diagram */
 .integration-diagram {
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  position: absolute;
+  width: 1240px;
+  height: 320px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 334px;
 }
 
 .integration-diagram img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* Cards Section */
 .integration-cards-section {
   background-color: #F5F7F5;
+  padding: 80px 0;
+}
+
+/* Filters */
+.integration-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 700px;
+}
+
+.filter-pill {
+  background: transparent;
+  border: 1px solid #E5E7EB;
+  color: #666;
+  padding: 8px 16px;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-pill:hover {
+  border-color: #999;
+  color: #333;
+}
+
+.filter-pill.active {
+  background: #1A332B;
+  border-color: #1A332B;
+  color: #fff;
+}
+
+.integration-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 10px 16px;
+  min-width: 250px;
+}
+
+.integration-search input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #333;
+  font-size: 14px;
+  width: 100%;
+}
+
+.integration-search input::placeholder {
+  color: #999;
+}
+
+/* Integration Grid */
+.integration-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
 .integration-card {
   background: white;
   padding: 32px;
   border-radius: 16px;
-  border: 1px solid #E5E7EB;
   transition: box-shadow 0.3s ease;
 }
 
 .integration-card:hover {
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.integration-card-logo {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.integration-card-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.integration-card-tag {
+  display: inline-block;
+  background: #F5F5F5;
+  border: 1px solid #E5E5E5;
+  border-radius: 100px;
+  padding: 4px 12px;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.integration-card-desc {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .integration-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .integration-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .integration-filters {
+    flex-direction: column;
+  }
+  
+  .integration-search {
+    width: 100%;
+  }
+}
+
+/* Custom Integration CTA Section */
+.integration-cta-section {
+  background-color: #F5F7F5;
+  padding: 40px 0 120px;
+}
+
+.integration-cta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 32px;
+}
+
+.integration-cta-badge-text {
+  background-color: white;
+  border-radius: 100px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1A332B;
+}
+
+.integration-cta-title {
+  font-size: 56px;
+  font-weight: 600;
+  color: #1A332B;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.integration-cta-subtitle {
+  font-size: 18px;
+  color: #6B7280;
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+
+.integration-cta-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.integration-cta-button {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.integration-cta-button:hover {
+  opacity: 0.9;
+}
+
+.integration-cta-button span {
+  background: #1A332B;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.integration-cta-arrow {
+  width: 48px;
+  height: 48px;
+  background: #1A332B;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -4px;
+}
+
+.integration-cta-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #6B7280;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.integration-cta-link:hover {
+  color: #1A332B;
 }
 
 /* Responsive */
@@ -120,5 +338,14 @@
   .integration-icon {
     width: 40px;
     height: 40px;
+  }
+
+  .integration-cta-title {
+    font-size: 36px;
+  }
+
+  .integration-cta-buttons {
+    flex-direction: column;
+    gap: 16px;
   }
 }
