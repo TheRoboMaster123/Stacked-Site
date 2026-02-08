@@ -70,21 +70,20 @@ const HeroSection = () => (
                 </a>
             </div>
 
-            <div className="workflow-diagram">
-                <div className="absolute inset-0 flex items-center justify-center text-center">
-                    <div>
-                        <p className="text-lg text-white font-medium">Packs interlock.</p>
-                        <p className="text-gray-400">Data flows end-to-end.</p>
-                    </div>
-                </div>
+        </div>
 
-                {/* Workflow Cards */}
-                <WorkflowCard title="Intake" position="bottom-0 left-0 -translate-x-1/4 translate-y-1/4" />
-                <WorkflowCard title="Analysis" position="top-1/2 left-0 -translate-x-1/2 -translate-y-1/2" />
-                <WorkflowCard title="Decide" position="top-0 left-1/2 -translate-x-1/2 -translate-y-1/4" />
-                <WorkflowCard title="Route" position="top-1/2 right-0 translate-x-1/2 -translate-y-1/2" />
-                <WorkflowCard title="Fund" position="bottom-0 right-0 translate-x-1/4 translate-y-1/4" />
-            </div>
+        {/* Workflow Cards - positioned absolutely within hero */}
+        <div className="workflow-diagram">
+            <img src="/Group 40.svg" alt="Intake" className="workflow-card pos-intake" />
+            <img src="/Group 41.svg" alt="Analysis" className="workflow-card pos-analysis" />
+            <img src="/Group 42.svg" alt="Decide" className="workflow-card pos-decide" />
+            <img src="/Group 44.svg" alt="Route" className="workflow-card pos-route" />
+            <img src="/Group 45.svg" alt="Fund" className="workflow-card pos-fund" />
+        </div>
+
+        {/* Bottom text */}
+        <div className="workflow-bottom-text">
+            <p>Packs interlock. Data flows end-to-end.</p>
         </div>
     </section>
 );

@@ -2,15 +2,15 @@
   /* Base styles */
   position: relative;
   overflow: hidden;
+  width: 100%;
   
-  /* User requested layout fixes */
-  min-height: 952px;
+  /* Figma exact height */
+  height: 952px;
   padding-top: 100px;
   padding-bottom: 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
 
@@ -18,31 +18,73 @@
   background: linear-gradient(180deg, #000000 0%, #1A332B 100%);
 }
 
+.hero-section::after {
+  content: '';
+  position: absolute;
+  width: 2663.76px;
+  height: 652px;
+  left: calc(50% - 2663.76px/2 - 0.12px);
+  bottom: 0;
+  background: url('/TOP SECTION DOTS.svg') center center / contain no-repeat;
+  pointer-events: none;
+  z-index: 0;
+}
+
 .workflow-diagram {
-  margin-top: 40px;
-  position: relative;
+  position: absolute;
   width: 100%;
-  max-width: 1000px;
-  height: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
 }
 
 .workflow-card {
   position: absolute;
-  width: 160px;
-  height: 128px;
-  padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.2);
-  border: 1.5px solid rgba(255, 255, 255, 0.2);
-  border-radius: 24px;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px); /* For Safari */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 96px;
+  height: 96px;
+  pointer-events: auto;
+}
+
+/* Figma positions - centered relative (1440px design) */
+.workflow-card.pos-intake {
+  left: calc(50% - 620px);
+  top: 756px;
+}
+
+.workflow-card.pos-analysis {
+  left: calc(50% - 380px);
+  top: 555px;
+}
+
+.workflow-card.pos-decide {
+  left: calc(50% - 48px);
+  top: 483px;
+}
+
+.workflow-card.pos-route {
+  left: calc(50% + 284px);
+  top: 555px;
+}
+
+.workflow-card.pos-fund {
+  left: calc(50% + 524px);
+  top: 756px;
+}
+
+.workflow-bottom-text {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
+  z-index: 10;
+}
+
+.workflow-bottom-text p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  letter-spacing: 0.02em;
 }
 
 /* ============================================
