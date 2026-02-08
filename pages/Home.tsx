@@ -295,13 +295,11 @@ const PacksSection = () => (
             {/* Section Header */}
             <div className="text-center mb-16">
                 <div className="packs-badge">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 0L9.79611 6.20389L16 8L9.79611 9.79611L8 16L6.20389 9.79611L0 8L6.20389 6.20389L8 0Z" fill="#D4FF73"/>
-                    </svg>
-                    <span>Packs</span>
+                    <img src="/stacked-icon.png" alt="" className="w-8 h-8" />
+                    <span className="packs-badge-text">Packs</span>
                 </div>
                 <h2 className="packs-title">
-                    <span className="text-[#D4FF73]">From Intake to Funding,</span>{' '}
+                    <span className="text-[#1A332B]">From Intake to Funding,</span>{' '}
                     <span className="text-gray-400">Each Pack<br/>Powers a Step in the Lending Journey</span>
                 </h2>
                 <p className="packs-subtitle">
@@ -399,10 +397,12 @@ const PacksSection = () => (
             {/* Explore Packs Button */}
             <div className="text-center mt-16">
                 <Link to="/packs" className="explore-packs-btn">
-                    Explore Packs
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
+                    <span className="explore-packs-text">Explore Packs</span>
+                    <span className="explore-packs-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </span>
                 </Link>
             </div>
         </div>
