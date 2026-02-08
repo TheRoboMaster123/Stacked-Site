@@ -29,7 +29,12 @@ const Header = () => {
         </nav>
         
         <Link to="/contact" className="contact-button">
-          Contact Us
+          <span className="contact-button-text">Contact Us</span>
+          <div className="contact-button-arrow">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#1A332B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </div>
         </Link>
       </div>
     </header>

@@ -56,29 +56,36 @@
 }
 
 .contact-button {
-  background: #D4FF73;
-  color: #000000;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-family: Inter, sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  border: none;
-  cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 8px;
-  transition: background 0.2s ease;
+  gap: 0;
   text-decoration: none;
+  transition: opacity 0.2s ease;
 }
 
 .contact-button:hover {
-  background: #c4e863;
+  opacity: 0.9;
 }
 
-.contact-button::after {
-  content: '→';
-  font-size: 18px;
+.contact-button-text {
+  background: #D4FF73;
+  color: #1A332B;
+  padding: 12px 24px;
+  border-radius: 100px;
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.contact-button-arrow {
+  width: 44px;
+  height: 44px;
+  background: #D4FF73;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -4px;
 }
 
 @media (max-width: 768px) {
