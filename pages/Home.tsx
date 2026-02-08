@@ -115,10 +115,8 @@ const MeetStackedSection = () => (
             {/* Section Header */}
             <div className="text-center mb-12">
                 <div className="meet-stacked-badge">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 0L9.79611 6.20389L16 8L9.79611 9.79611L8 16L6.20389 9.79611L0 8L6.20389 6.20389L8 0Z" fill="#1A332B"/>
-                    </svg>
-                    <span>Meet Stacked</span>
+                    <img src="/stacked-icon.png" alt="" className="w-8 h-8" />
+                    <span className="meet-stacked-badge-text">Meet Stacked</span>
                 </div>
                 <h2 className="meet-stacked-title">Built for Smarter Lending Operations</h2>
                 <p className="meet-stacked-subtitle">
@@ -135,14 +133,7 @@ const MeetStackedSection = () => (
                         Automate intake, underwriting, and approvals to work faster and fund more clients easily.
                     </p>
                     <div className="feature-card-visual workflows-visual">
-                        <div className="stacked-logo-icon">
-                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M35 10H10V35H35V10Z" fill="#1A332B"/>
-                                <path d="M70 10H45V35H70V10Z" fill="#1A332B"/>
-                                <path d="M35 45H10V70H35V45Z" fill="#1A332B"/>
-                                <path d="M70 45H45V70H70V45Z" fill="#D4FF73"/>
-                            </svg>
-                        </div>
+                        <img src="/reinvent-lending.png" alt="Reinvent Lending" className="max-w-[300px] w-full" />
                     </div>
                 </div>
 
@@ -422,25 +413,20 @@ const PacksSection = () => (
 const WhyStackedSection = () => (
     <section className="why-stacked-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="why-stacked-grid">
-                {/* Left Side - Content */}
-                <div className="why-stacked-content">
-                    {/* Section Header */}
-                    <div className="why-stacked-badge">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 0L9.79611 6.20389L16 8L9.79611 9.79611L8 16L6.20389 9.79611L0 8L6.20389 6.20389L8 0Z" fill="#D4FF73"/>
-                        </svg>
-                        <span>Why Stacked?</span>
-                    </div>
-                    <h2 className="why-stacked-title">
-                        Unified AI Infrastructure<br/>for Lending
-                    </h2>
-                    <p className="why-stacked-subtitle">
-                        Legacy systems slow you down. Stacked moves in real time.
-                    </p>
+            {/* Section Header - Above Everything */}
+            <div className="why-stacked-header">
+                <h2 className="why-stacked-title">
+                    Unified AI Infrastructure<br/>for Lending
+                </h2>
+                <p className="why-stacked-subtitle">
+                    Legacy systems slow you down. Stacked moves in real time.
+                </p>
+            </div>
 
-                    {/* Feature Cards Grid */}
-                    <div className="why-features-grid">
+            {/* Cards + Visual Grid */}
+            <div className="why-stacked-grid">
+                {/* Left Side - Feature Cards */}
+                <div className="why-features-grid">
                         {/* Card 1: Modular by Design */}
                         <div className="why-feature-card">
                             <div className="why-feature-icon">
@@ -490,60 +476,10 @@ const WhyStackedSection = () => (
                             <p className="why-feature-description">Multi-tenant, SOC2-ready infrastructure.</p>
                         </div>
                     </div>
-                </div>
 
                 {/* Right Side - Visual Diagram */}
-                <div className="why-stacked-visual">
-                    <div className="integration-diagram">
-                        {/* Connection Lines SVG */}
-                        <svg className="connection-lines" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            {/* Lines from center to nodes */}
-                            <path d="M200 200 L120 80" stroke="#E5E7EB" strokeWidth="2" strokeDasharray="4 4"/>
-                            <path d="M200 200 L320 100" stroke="#E5E7EB" strokeWidth="2" strokeDasharray="4 4"/>
-                            <path d="M200 200 L350 200" stroke="#E5E7EB" strokeWidth="2" strokeDasharray="4 4"/>
-                            <path d="M200 200 L320 300" stroke="#E5E7EB" strokeWidth="2" strokeDasharray="4 4"/>
-                            <path d="M200 200 L120 320" stroke="#E5E7EB" strokeWidth="2" strokeDasharray="4 4"/>
-                        </svg>
-
-                        {/* Center Logo */}
-                        <div className="diagram-center">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M16 8V24M8 16H24" stroke="#1A332B" strokeWidth="3" strokeLinecap="round"/>
-                            </svg>
-                        </div>
-
-                        {/* Floating Nodes */}
-                        <div className="diagram-node node-1">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <polygon points="12 2 2 7 12 12 22 7 12 2" stroke="#9CA3AF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                                <polyline points="2 17 12 22 22 17" stroke="#9CA3AF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                                <polyline points="2 12 12 17 22 12" stroke="#9CA3AF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                            </svg>
-                        </div>
-                        <div className="diagram-node node-2">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" stroke="#9CA3AF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                                <path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" stroke="#9CA3AF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                            </svg>
-                        </div>
-                        <div className="diagram-node node-3">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="3" y="11" width="18" height="11" rx="2" stroke="#9CA3AF" strokeWidth="2"/>
-                                <path d="M7 11V7a5 5 0 0110 0v4" stroke="#9CA3AF" strokeWidth="2"/>
-                            </svg>
-                        </div>
-                        <div className="diagram-node node-4">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" stroke="#9CA3AF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                            </svg>
-                        </div>
-                        <div className="diagram-node node-5">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="12" cy="12" r="3" stroke="#9CA3AF" strokeWidth="2"/>
-                                <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 114 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" stroke="#9CA3AF" strokeWidth="2"/>
-                            </svg>
-                        </div>
-                    </div>
+                <div className="why-stacked-visual h-full">
+                    <img src="/unified ai infrastructure.png" alt="Unified AI Infrastructure" className="w-full h-full object-contain" />
                 </div>
             </div>
         </div>
