@@ -309,103 +309,89 @@ const PacksSection = () => (
                 </p>
             </div>
 
-            {/* Packs Timeline */}
-            <div className="packs-timeline">
-                {/* Vertical Line */}
-                <div className="timeline-line"></div>
-
-                {/* Pack 1: Application Pack - Left */}
-                <div className="pack-row pack-row-left">
-                    <div className="pack-card">
-                        <div className="pack-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="3" y="3" width="7" height="7" rx="1" stroke="#1A332B" strokeWidth="2"/>
-                                <rect x="14" y="3" width="7" height="7" rx="1" stroke="#1A332B" strokeWidth="2"/>
-                                <rect x="3" y="14" width="7" height="7" rx="1" stroke="#1A332B" strokeWidth="2"/>
-                                <rect x="14" y="14" width="7" height="7" rx="1" stroke="#1A332B" strokeWidth="2"/>
-                            </svg>
-                        </div>
+            {/* Packs Container - Absolute positioned cards */}
+            <div className="packs-container">
+                {/* Vertical dashed line */}
+                <div className="packs-line"></div>
+                
+                {/* Labels */}
+                <img src="/Application intake.svg" alt="Application Intake" className="pack-label pack-label-1" />
+                <img src="/Document and bank analysis.svg" alt="Document & Bank Analysis" className="pack-label pack-label-2" />
+                <img src="/Qualification and decision.svg" alt="Qualification & Decision" className="pack-label pack-label-3" />
+                <img src="/Partner Management.svg" alt="Partner Management" className="pack-label pack-label-4" />
+                <img src="/Connectivity.svg" alt="Connectivity" className="pack-label pack-label-5" />
+                {/* Pack 1: Application Pack */}
+                <div className="pack-card pack-card-1">
+                    <div className="pack-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="3" width="7" height="7" rx="1" stroke="#1A332B" strokeWidth="2"/>
+                            <rect x="14" y="3" width="7" height="7" rx="1" stroke="#1A332B" strokeWidth="2"/>
+                            <rect x="3" y="14" width="7" height="7" rx="1" stroke="#1A332B" strokeWidth="2"/>
+                            <rect x="14" y="14" width="7" height="7" rx="1" stroke="#1A332B" strokeWidth="2"/>
+                        </svg>
+                    </div>
+                    <div>
                         <h3 className="pack-title">Application Pack</h3>
                         <p className="pack-description">Smart forms, intake routing, real-time validation.</p>
                     </div>
-                    <div className="pack-label-container">
-                        <div className="pack-dot"></div>
-                        <span className="pack-label">Application Intake</span>
-                    </div>
                 </div>
 
-                {/* Pack 2: Automation Pack - Right */}
-                <div className="pack-row pack-row-right">
-                    <div className="pack-label-container">
-                        <span className="pack-label">Document & Bank Analysis</span>
-                        <div className="pack-dot"></div>
+                {/* Pack 2: Automation Pack */}
+                <div className="pack-card pack-card-2">
+                    <div className="pack-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="3" stroke="#1A332B" strokeWidth="2"/>
+                            <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" stroke="#1A332B" strokeWidth="2"/>
+                        </svg>
                     </div>
-                    <div className="pack-card">
-                        <div className="pack-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="12" cy="12" r="3" stroke="#1A332B" strokeWidth="2"/>
-                                <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" stroke="#1A332B" strokeWidth="2"/>
-                            </svg>
-                        </div>
+                    <div>
                         <h3 className="pack-title">Automation Pack</h3>
                         <p className="pack-description">OCR parsing, Plaid integration, financial summaries.</p>
                     </div>
                 </div>
 
-                {/* Pack 3: Decisioning Pack - Left */}
-                <div className="pack-row pack-row-left">
-                    <div className="pack-card">
-                        <div className="pack-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2" stroke="#1A332B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                                <rect x="8" y="2" width="8" height="4" rx="1" stroke="#1A332B" strokeWidth="2"/>
-                                <path d="M9 12l2 2 4-4" stroke="#1A332B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                            </svg>
-                        </div>
+                {/* Pack 3: Decisioning Pack */}
+                <div className="pack-card pack-card-3">
+                    <div className="pack-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2" stroke="#1A332B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            <rect x="8" y="2" width="8" height="4" rx="1" stroke="#1A332B" strokeWidth="2"/>
+                            <path d="M9 12l2 2 4-4" stroke="#1A332B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                    <div>
                         <h3 className="pack-title">Decisioning Pack</h3>
                         <p className="pack-description">Rule engine, scorecards, AI-assisted decision support.</p>
                     </div>
-                    <div className="pack-label-container">
-                        <div className="pack-dot"></div>
-                        <span className="pack-label">Qualification & Decision</span>
-                    </div>
                 </div>
 
-                {/* Pack 4: Affiliate Pack - Right */}
-                <div className="pack-row pack-row-right">
-                    <div className="pack-label-container">
-                        <span className="pack-label">Partner Management</span>
-                        <div className="pack-dot"></div>
+                {/* Pack 4: Affiliate Pack */}
+                <div className="pack-card pack-card-4">
+                    <div className="pack-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="#1A332B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            <circle cx="9" cy="7" r="4" stroke="#1A332B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="#1A332B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
                     </div>
-                    <div className="pack-card">
-                        <div className="pack-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="#1A332B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                                <circle cx="9" cy="7" r="4" stroke="#1A332B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="#1A332B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                            </svg>
-                        </div>
+                    <div>
                         <h3 className="pack-title">Affiliate Pack</h3>
                         <p className="pack-description">Referral analytics, commission automation.</p>
                     </div>
                 </div>
 
-                {/* Pack 5: Integration Pack - Left */}
-                <div className="pack-row pack-row-left">
-                    <div className="pack-card">
-                        <div className="pack-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <polygon points="12 2 2 7 12 12 22 7 12 2" stroke="#1A332B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                                <polyline points="2 17 12 22 22 17" stroke="#1A332B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                                <polyline points="2 12 12 17 22 12" stroke="#1A332B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                            </svg>
-                        </div>
+                {/* Pack 5: Integration Pack */}
+                <div className="pack-card pack-card-5">
+                    <div className="pack-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2" stroke="#1A332B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            <polyline points="2 17 12 22 22 17" stroke="#1A332B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            <polyline points="2 12 12 17 22 12" stroke="#1A332B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                    <div>
                         <h3 className="pack-title">Integration Pack</h3>
                         <p className="pack-description">APIs, Salesforce sync, webhooks, ActiveCampaign automation.</p>
-                    </div>
-                    <div className="pack-label-container">
-                        <div className="pack-dot"></div>
-                        <span className="pack-label">Connectivity</span>
                     </div>
                 </div>
             </div>
