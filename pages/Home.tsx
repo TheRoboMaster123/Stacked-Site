@@ -62,11 +62,15 @@ const HeroSection = () => (
             </p>
 
             <div className="mt-8 mb-24 flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Link to="/demo-booking" className="bg-[#D4FF73] text-[#0A0F0D] font-medium py-3 px-6 rounded-full hover:bg-opacity-90 transition-all duration-300 flex items-center gap-2 text-lg">
-                    Book a Demo
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
+                <Link to="/demo-booking" className="flex items-center gap-0 hover:opacity-90 transition-all duration-300">
+                    <span className="bg-[#D4FF73] text-[#0A0F0D] font-medium px-6 py-3 rounded-full text-lg">
+                        Book a Demo
+                    </span>
+                    <div className="w-12 h-12 bg-[#D4FF73] rounded-full flex items-center justify-center -ml-1">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#1A332B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
                 </Link>
                 <a href="#" className="text-white font-medium hover:text-gray-300 flex items-center gap-2 text-lg transition-colors">
                     Request Sandbox Access ✦
@@ -86,7 +90,7 @@ const HeroSection = () => (
 
         {/* Bottom text */}
         <div className="workflow-bottom-text">
-            <p>Packs interlock. Data flows end-to-end.</p>
+            <p className="text-gray-500">Packs interlock. Data flows end-to-end.</p>
         </div>
     </section>
 );
