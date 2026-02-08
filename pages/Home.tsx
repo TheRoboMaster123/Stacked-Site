@@ -54,11 +54,12 @@ const HeroSection = () => (
                 <span className="text-gray-400">Lending Originations</span>
             </h1>
 
-            <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-300 leading-relaxed">
-                Intake, bank analysis, decisioning, routing, submissions, partner distribution on one system. A Vertical AI Originations Network, where partners and communities originate, and lenders fund, on one shared workflow.
+            <p className="mt-6 mx-auto text-lg text-gray-300 leading-relaxed whitespace-nowrap">
+                Intake, bank analysis, decisioning, routing, submissions, partner distribution on one system.<br />
+                A Vertical AI Originations Network, where partners and communities originate, and lenders fund, on one shared workflow.
             </p>
 
-            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="mt-8 mb-24 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link to="/demo-booking" className="bg-[#D4FF73] text-[#0A0F0D] font-medium py-3 px-6 rounded-full hover:bg-opacity-90 transition-all duration-300 flex items-center gap-2 text-lg">
                     Book a Demo
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
