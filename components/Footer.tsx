@@ -76,6 +76,7 @@ const Footer = () => {
                     <li><FooterLink to="/contact">Contact</FooterLink></li>
                     <li><FooterLink to="/blog">Blog</FooterLink></li>
                     <li><FooterLink to="/faq">FAQ</FooterLink></li>
+                    <li><FooterLink to="/help">Help Center</FooterLink></li>
                 </ul>
             </div>
 

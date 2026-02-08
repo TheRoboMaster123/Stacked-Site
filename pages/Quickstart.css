@@ -1,0 +1,268 @@
+/* Quickstart Guide Page Styles */
+
+.quickstart-page {
+  background-color: #F5F7F5;
+  padding: 80px 0 120px;
+}
+
+.quickstart-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 80px;
+}
+
+/* Main Content */
+.quickstart-main {
+  max-width: 700px;
+}
+
+.quickstart-title {
+  font-size: 42px;
+  font-weight: 500;
+  color: #1A332B;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.quickstart-intro {
+  font-size: 16px;
+  color: #6B7280;
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+
+.quickstart-main h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1A332B;
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+
+.quickstart-main h2:first-of-type {
+  margin-top: 0;
+}
+
+.quickstart-main p {
+  font-size: 15px;
+  color: #4B5563;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.quickstart-main ul,
+.quickstart-main ol {
+  margin: 16px 0;
+  padding-left: 24px;
+}
+
+.quickstart-main li {
+  font-size: 15px;
+  color: #4B5563;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.quickstart-main strong {
+  color: #1A332B;
+  font-weight: 600;
+}
+
+/* Tip Box */
+.quickstart-tip {
+  font-size: 14px;
+  color: #4B5563;
+  margin-top: 16px;
+}
+
+.quickstart-tip strong {
+  color: #1A332B;
+}
+
+/* Best Practice */
+.quickstart-best-practice {
+  font-size: 14px;
+  color: #4B5563;
+  margin-top: 16px;
+}
+
+/* Video Embed */
+.quickstart-video {
+  margin: 40px 0;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  background: #1A332B;
+  aspect-ratio: 16/9;
+}
+
+.quickstart-video-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.quickstart-video-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.quickstart-video-logo img {
+  width: 20px;
+  height: 20px;
+}
+
+.quickstart-video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  background: rgba(255, 0, 0, 0.9);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.quickstart-video-play svg {
+  color: white;
+  margin-left: 4px;
+}
+
+.quickstart-video-title {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Sidebar */
+.quickstart-sidebar {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+
+.quickstart-toc {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 16px;
+  border-left: 2px solid #E5E7EB;
+}
+
+.quickstart-toc-item {
+  font-size: 14px;
+  color: #6B7280;
+  text-decoration: none;
+  line-height: 1.5;
+  transition: color 0.2s;
+  margin-left: -18px;
+  padding-left: 16px;
+  border-left: 2px solid transparent;
+}
+
+.quickstart-toc-item:hover {
+  color: #1A332B;
+}
+
+.quickstart-toc-item.active {
+  color: #1A332B;
+  font-weight: 500;
+  border-left: 2px solid #1A332B;
+}
+
+/* Navigation */
+.quickstart-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid #E5E7EB;
+}
+
+.quickstart-nav-prev,
+.quickstart-nav-next {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #1A332B;
+}
+
+.quickstart-nav-prev:hover .quickstart-nav-title,
+.quickstart-nav-next:hover .quickstart-nav-title {
+  color: #2d5a4a;
+}
+
+.quickstart-nav-arrow {
+  width: 40px;
+  height: 40px;
+  background: #F5F7F5;
+  border: 1px solid #E5E7EB;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1A332B;
+}
+
+.quickstart-nav-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.quickstart-nav-label {
+  font-size: 12px;
+  color: #6B7280;
+}
+
+.quickstart-nav-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1A332B;
+}
+
+.quickstart-nav-next {
+  text-align: right;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .quickstart-container {
+    grid-template-columns: 1fr;
+  }
+
+  .quickstart-sidebar {
+    display: none;
+  }
+
+  .quickstart-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .quickstart-nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .quickstart-nav-next {
+    text-align: left;
+    flex-direction: row-reverse;
+  }
+}

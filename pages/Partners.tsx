@@ -6,9 +6,6 @@ const Partners = () => {
     <div className="partners-page">
       {/* Hero Section */}
       <section className="partners-hero">
-        {/* Dots overlay */}
-        <div className="partners-dots"></div>
-        
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Badge */}
           <div className="partners-badge">
@@ -44,11 +41,6 @@ const Partners = () => {
               </svg>
             </a>
           </div>
-        </div>
-
-        {/* Visual Diagram */}
-        <div className="partners-diagram">
-          <img src="/communities.png" alt="Partners Community" />
         </div>
       </section>
 

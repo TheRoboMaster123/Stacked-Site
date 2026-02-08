@@ -1,51 +1,150 @@
-
 import React from 'react';
+import { Link } from 'react-router-dom';
+import './Quickstart.css';
 
 const Quickstart = () => {
   return (
-    <div className="bg-white text-black py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="lg:grid lg:grid-cols-4 lg:gap-12">
-            <article className="lg:col-span-3 prose lg:prose-lg max-w-none">
-                <header className="mb-12">
-                    <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900">Quickstart Guide</h1>
-                    <p className="mt-4 text-lg text-gray-500">Set up your workspace, create your first intake workflow, and publish a lender-ready Application Pack.</p>
-                </header>
+    <div className="quickstart-page">
+      <div className="quickstart-container">
+        {/* Main Content */}
+        <article className="quickstart-main">
+          <h1 className="quickstart-title">Quickstart Guide</h1>
+          <p className="quickstart-intro">
+            Set up your workspace, create your first intake workflow, and publish a review-ready Application Pack.
+          </p>
 
-                <h2>What you'll set up</h2>
-                <p>By the end of this guide, you will have:</p>
-                <ul>
-                    <li>A Stacked workspace with your team invited</li>
-                    <li>One Application Pack (requirements + validation)</li>
-                    <li>One Partner or Direct Intake Link ready</li>
-                    <li>Your first CRM integration connected</li>
-                </ul>
+          <h2>What you'll set up</h2>
+          <p>By the end of this guide, you will have:</p>
+          <ul>
+            <li>A Stacked workspace with your team invited</li>
+            <li>One intake link (form + uploads)</li>
+            <li>One Application Pack (requirements + validation)</li>
+            <li>A basic workflow (stages + owners)</li>
+            <li>An optional first integration connection</li>
+          </ul>
 
-                <h2>Step 1: Create your workspace</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec sem ac libero elementum tristique. Vivamus interdum, justo et efficitur congue, nisi felis semper nunc, et consectetur magna felis a enim.</p>
-                
-                <figure className="my-10">
-                    <div className="aspect-w-16 aspect-h-9 bg-black rounded-2xl flex items-center justify-center">
-                        <p className="text-white text-2xl">Intro to Stacked Video</p>
-                    </div>
-                </figure>
+          <h2>Before you begin</h2>
+          <p>You'll need:</p>
+          <ul>
+            <li>Your company name and a workspace owner</li>
+            <li>A simple list of required intake fields (basic borrower + business info)</li>
+            <li>A list of required documents for one product/program (start with one)</li>
+            <li>The names of internal reviewers (who owns which stage)</li>
+          </ul>
 
-                 <h2>Step 2: Invite your team and set roles</h2>
-                 <p>Donec in velit vel ipsum auctor pulvinar. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+          <h2>Step 1: Create your workspace</h2>
+          <ol>
+            <li>Sign in and create your Workspace</li>
+            <li>Set your workspace name and default preferences</li>
+            <li>Confirm your primary contact email for notifications</li>
+          </ol>
+          <p className="quickstart-tip">
+            <strong>Tip:</strong> Use a workspace name your team recognizes (e.g., "Stacked – Lending Ops").
+          </p>
 
-            </article>
-            <aside className="hidden lg:block relative">
-                <div className="sticky top-24 p-6 border border-gray-200 rounded-2xl">
-                    <h3 className="font-semibold">What you'll set up:</h3>
-                    <ul className="mt-3 text-sm space-y-2 text-gray-600">
-                        <li><a href="#" className="hover:text-black">Create your workspace</a></li>
-                        <li><a href="#" className="hover:text-black">Invite your team and set roles</a></li>
-                        <li><a href="#" className="hover:text-black">Common setup mistakes</a></li>
-                        <li><a href="#" className="hover:text-black">Quick fixes</a></li>
-                    </ul>
-                </div>
-            </aside>
-        </div>
+          <h2>Step 2: Invite your team and set roles</h2>
+          <p>Invite the core team first:</p>
+          <ul>
+            <li><strong>Admin:</strong> config + integrations + permissions</li>
+            <li><strong>Ops:</strong> manages applications and workflows</li>
+            <li><strong>Reviewer:</strong> reviews packs and adds decisions/notes</li>
+            <li><strong>Partner user (optional):</strong> limited visibility for routing updates</li>
+          </ul>
+          <p className="quickstart-best-practice">
+            <strong>Best practice:</strong> Start with fewer admins. Add roles as your workflow becomes stable.
+          </p>
+
+          <h2>Common setup mistakes (and quick fixes)</h2>
+          
+          <p><strong>1) The pack never becomes "Complete"</strong></p>
+          <p>Check required docs and file type rules.</p>
+
+          <p><strong>2) Too many required fields</strong></p>
+          <p>Shorten intake. Move "nice-to-have" questions to later stages.</p>
+
+          <p><strong>3) Workflow stages feel unclear</strong></p>
+          <p>Rename stages to reflect actions, not departments (e.g., "Ready for Review," not "Ops Team").</p>
+
+          <p><strong>4) Partner routing feels premature</strong></p>
+          <p>Start with internal review flow first. Add routing once packs are consistently complete.</p>
+
+          {/* Video Embed */}
+          <div className="quickstart-video">
+            <img 
+              src="https://images.unsplash.com/photo-1560439514-4e9645039924?w=800&h=450&fit=crop" 
+              alt="Video thumbnail"
+              style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.6 }}
+            />
+            <div className="quickstart-video-overlay">
+              <div className="quickstart-video-logo">
+                <img src="/stacked-icon.png" alt="" />
+                stacked
+              </div>
+              <div className="quickstart-video-play">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </div>
+              <div className="quickstart-video-title">Intro to Stacked</div>
+            </div>
+          </div>
+
+          <h2>Next steps</h2>
+          <p>Choose one path:</p>
+          
+          <p><strong>Continue setup</strong></p>
+          <ul>
+            <li>Create a second Application Pack for another product/program</li>
+            <li>Add routing rules for partner matching</li>
+            <li>Invite partner users with limited permissions</li>
+          </ul>
+
+          <p><strong>Learn more</strong></p>
+          <ul>
+            <li>Document checks and validation</li>
+            <li>Roles and permissions</li>
+            <li>Integration rollout strategy</li>
+            <li>Partner routing basics</li>
+          </ul>
+
+          {/* Navigation */}
+          <nav className="quickstart-nav">
+            <Link to="/help/document-checks" className="quickstart-nav-prev">
+              <div className="quickstart-nav-arrow">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M19 12H5M12 19l-7-7 7-7" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+              <div className="quickstart-nav-text">
+                <span className="quickstart-nav-label">Previous</span>
+                <span className="quickstart-nav-title">Document Checks</span>
+              </div>
+            </Link>
+            <Link to="/help/application-pack" className="quickstart-nav-next">
+              <div className="quickstart-nav-text">
+                <span className="quickstart-nav-label">Next</span>
+                <span className="quickstart-nav-title">Build an Application Pack</span>
+              </div>
+              <div className="quickstart-nav-arrow">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+            </Link>
+          </nav>
+        </article>
+
+        {/* Sidebar */}
+        <aside className="quickstart-sidebar">
+          <nav className="quickstart-toc">
+            <a href="#" className="quickstart-toc-item active">What you'll set up</a>
+            <a href="#" className="quickstart-toc-item">Before you begin</a>
+            <a href="#" className="quickstart-toc-item">Create your workspace</a>
+            <a href="#" className="quickstart-toc-item">Invite your team and set roles</a>
+            <a href="#" className="quickstart-toc-item">Common setup mistakes (and quick fixes)</a>
+            <a href="#" className="quickstart-toc-item">Next steps</a>
+          </nav>
+        </aside>
       </div>
     </div>
   );

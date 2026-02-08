@@ -1,0 +1,219 @@
+/* Help Center Page Styles */
+
+.help-page {
+  background-color: #F5F7F5;
+}
+
+/* Hero Section */
+.help-hero {
+  background: #F5F7F5;
+  padding: 120px 0 80px;
+  text-align: center;
+}
+
+.help-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Badge */
+.help-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 32px;
+}
+
+.help-badge-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.help-badge-icon img {
+  width: 32px;
+  height: 32px;
+}
+
+.help-badge-text {
+  background: white;
+  border-radius: 100px;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1A332B;
+  border: 1px solid #E5E7EB;
+}
+
+.help-title {
+  font-size: 64px;
+  font-weight: 500;
+  color: #1A332B;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
+}
+
+/* Search Box */
+.help-search {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.help-search-input {
+  flex: 1;
+  padding: 16px 24px;
+  border: 1px solid #E5E7EB;
+  border-radius: 100px 0 0 100px;
+  font-size: 16px;
+  color: #1A332B;
+  background: white;
+  outline: none;
+}
+
+.help-search-input::placeholder {
+  color: #9CA3AF;
+}
+
+.help-search-input:focus {
+  border-color: #D4FF73;
+}
+
+.help-search-btn {
+  width: 56px;
+  height: 56px;
+  background: #D4FF73;
+  border: none;
+  border-radius: 0 100px 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #1A332B;
+}
+
+.help-search-btn:hover {
+  background: #c4ef63;
+}
+
+/* Content Section */
+.help-content {
+  padding: 0 0 120px;
+}
+
+.help-content-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.help-section-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1A332B;
+  margin-bottom: 24px;
+  margin-top: 60px;
+}
+
+.help-section-title:first-of-type {
+  margin-top: 0;
+}
+
+/* Cards Grid */
+.help-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Help Card */
+.help-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  min-height: 220px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.help-card:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.help-card-highlight {
+  background: #D4FF73;
+}
+
+.help-card-icon {
+  color: #1A332B;
+  margin-bottom: auto;
+}
+
+.help-card-divider {
+  border-top: 1px dashed #E5E7EB;
+  margin: 20px 0;
+}
+
+.help-card-highlight .help-card-divider {
+  border-color: #1A332B;
+  opacity: 0.3;
+}
+
+.help-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1A332B;
+  margin-bottom: 8px;
+}
+
+.help-card-desc {
+  font-size: 14px;
+  color: #6B7280;
+  line-height: 1.5;
+}
+
+.help-card-highlight .help-card-desc {
+  color: #1A332B;
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .help-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .help-title {
+    font-size: 42px;
+  }
+
+  .help-hero {
+    padding: 80px 0 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .help-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .help-title {
+    font-size: 32px;
+  }
+
+  .help-search-input {
+    padding: 14px 20px;
+  }
+
+  .help-search-btn {
+    width: 50px;
+    height: 50px;
+  }
+}

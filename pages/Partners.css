@@ -6,29 +6,11 @@
 
 /* Hero Section */
 .partners-hero {
-  background: url('/partners-bg.png') center center / cover no-repeat;
+  background: url('/partners-hero-bg.png') center center / cover no-repeat;
   padding: 120px 0 80px;
   position: relative;
   overflow: hidden;
   min-height: 900px;
-}
-
-/* Dots overlay */
-.partners-dots {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('/Communities dots.svg') center center / cover no-repeat;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.partners-hero > .max-w-5xl,
-.partners-hero > .partners-diagram {
-  position: relative;
-  z-index: 2;
 }
 
 /* Badge */
