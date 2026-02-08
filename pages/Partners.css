@@ -466,7 +466,7 @@
 
 /* Estimate Payouts Section */
 .partners-payouts-section {
-  background: linear-gradient(180deg, #0A0F0D 0%, #1A332B 100%);
+  background: #F5F7F5;
   padding: 100px 0;
 }
 
@@ -483,18 +483,19 @@
 }
 
 .payouts-badge-text {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: white;
+  border: 1px solid #E5E7EB;
   border-radius: 100px;
   padding: 8px 16px;
   font-size: 14px;
   font-weight: 500;
-  color: white;
+  color: #1A332B;
 }
 
 .payouts-title {
   font-size: 56px;
   font-weight: 600;
-  color: white;
+  color: #1A332B;
   line-height: 1.1;
   margin-bottom: 16px;
   letter-spacing: -0.02em;
@@ -502,7 +503,7 @@
 
 .payouts-subtitle {
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #6B7280;
 }
 
 .payouts-grid {
@@ -519,20 +520,21 @@
 
 .payouts-paragraph {
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.7);
+  color: #6B7280;
   line-height: 1.6;
   margin-bottom: 32px;
 }
 
 .payouts-paragraph strong {
-  color: white;
+  color: #1A332B;
   font-weight: 600;
 }
 
 .payouts-table-wrapper {
-  background: linear-gradient(180deg, #1A332B 0%, #0f1f1a 100%);
+  background: white;
   border-radius: 16px;
   overflow: hidden;
+  border: 1px solid #E5E7EB;
 }
 
 .payouts-table {
@@ -550,15 +552,15 @@
 }
 
 .payouts-table td {
-  color: rgba(255, 255, 255, 0.8);
+  color: #1A332B;
   font-size: 15px;
   padding: 20px 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid #E5E7EB;
 }
 
 .payouts-disclaimer {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #6B7280;
   line-height: 1.6;
   text-align: right;
 }
@@ -571,6 +573,197 @@
   .payouts-disclaimer {
     text-align: left;
   }
+}
+
+/* Who It's For Section */
+.partners-who-section {
+  background: #F5F7F5;
+  padding: 100px 0;
+}
+
+.who-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.who-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 24px;
+}
+
+.who-badge-text {
+  background-color: white;
+  border-radius: 100px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1A332B;
+}
+
+.who-title {
+  font-size: 48px;
+  font-weight: 600;
+  color: #9CA3AF;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.who-subtitle {
+  font-size: 18px;
+  color: #6B7280;
+}
+
+.who-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.who-card {
+  background: white;
+  border-radius: 20px;
+  padding: 32px;
+  position: relative;
+  min-height: 320px;
+}
+
+.who-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1A332B;
+  margin-bottom: 24px;
+}
+
+.who-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.who-card li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  color: #1A332B;
+}
+
+.who-card-icon {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  border: 2px dashed rgba(26, 51, 43, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .who-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Partners CTA Section */
+.partners-cta-section {
+  background: #F5F7F5;
+  padding: 120px 0;
+}
+
+.partners-cta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 32px;
+}
+
+.partners-cta-badge-text {
+  background-color: white;
+  border-radius: 100px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1A332B;
+}
+
+.partners-cta-title {
+  font-size: 56px;
+  font-weight: 500;
+  font-style: italic;
+  color: #9CA3AF;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.partners-cta-subtitle {
+  font-size: 18px;
+  color: #6B7280;
+  margin-bottom: 48px;
+}
+
+.partners-cta-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.partners-cta-btn {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.partners-cta-btn:hover {
+  opacity: 0.9;
+}
+
+.partners-cta-btn span {
+  background: #1A332B;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.partners-cta-arrow {
+  width: 48px;
+  height: 48px;
+  background: #1A332B;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -4px;
+}
+
+.partners-cta-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #6B7280;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.partners-cta-link:hover {
+  color: #1A332B;
 }
 
 /* Responsive */

@@ -374,6 +374,162 @@ const Partners = () => {
           </p>
         </div>
       </section>
+
+      {/* Who It's For Section */}
+      <section className="partners-who-section">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Header */}
+          <div className="who-header">
+            {/* Badge */}
+            <div className="who-badge">
+              <img src="/stacked-icon.png" alt="" className="w-8 h-8" />
+              <span className="who-badge-text">Who It's For</span>
+            </div>
+
+            {/* Title */}
+            <h2 className="who-title">Built for Partners Who Add Real Value</h2>
+
+            {/* Subtitle */}
+            <p className="who-subtitle">
+              From creators to advisors to communities, turn your influence and trust into lasting revenue.
+            </p>
+          </div>
+
+          {/* Cards */}
+          <div className="who-cards">
+            {/* Creators */}
+            <div className="who-card">
+              <h3>Creators</h3>
+              <ul>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A332B" strokeWidth="2">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                  Monetize evergreen content
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A332B" strokeWidth="2">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                  Simple CTAs
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A332B" strokeWidth="2">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                  No selling, no courses
+                </li>
+              </ul>
+              <div className="who-card-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1A332B" strokeWidth="1.5">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </div>
+            </div>
+
+            {/* CPAs & Advisors */}
+            <div className="who-card">
+              <h3>CPAs & Advisors</h3>
+              <ul>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A332B" strokeWidth="2">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                  Help clients access capital
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A332B" strokeWidth="2">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                  Stay advisory-first
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A332B" strokeWidth="2">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                  Earn on outcomes
+                </li>
+              </ul>
+              <div className="who-card-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1A332B" strokeWidth="1.5">
+                  <path d="M7 11L12 6L17 11M7 17L12 12L17 17"/>
+                </svg>
+              </div>
+            </div>
+
+            {/* Communities */}
+            <div className="who-card">
+              <h3>Communities</h3>
+              <ul>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A332B" strokeWidth="2">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                  One trusted resource
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A332B" strokeWidth="2">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                  Scales without admin work
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A332B" strokeWidth="2">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                  Clear value to members
+                </li>
+              </ul>
+              <div className="who-card-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1A332B" strokeWidth="1.5">
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="partners-cta-section">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          {/* Badge */}
+          <div className="partners-cta-badge">
+            <img src="/stacked-icon.png" alt="" className="w-8 h-8" />
+            <span className="partners-cta-badge-text">Partner with Stacked</span>
+          </div>
+
+          {/* Title */}
+          <h2 className="partners-cta-title">
+            Ready to Turn Your Audience<br />Into Revenue?
+          </h2>
+
+          {/* Subtitle */}
+          <p className="partners-cta-subtitle">
+            Join partners who are earning on funded business deals, not clicks.
+          </p>
+
+          {/* Buttons */}
+          <div className="partners-cta-buttons">
+            <a href="/contact" className="partners-cta-btn">
+              <span>Become A Partner</span>
+              <div className="partners-cta-arrow">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#D4FF73" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+            </a>
+            <a href="#how-it-works" className="partners-cta-link">
+              See How It Works
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M9 18l6-6-6-6"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

@@ -1,0 +1,561 @@
+/* About Page Styles */
+
+.about-page {
+  background-color: #F5F7F5;
+}
+
+/* Hero Section */
+.about-hero {
+  background: #F5F7F5;
+  padding: 120px 0 0;
+}
+
+/* Badge */
+.about-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 32px;
+}
+
+.about-badge-text {
+  background-color: white;
+  border: 1px solid #E5E7EB;
+  border-radius: 100px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1A332B;
+}
+
+/* Title */
+.about-title {
+  font-size: 72px;
+  font-weight: 600;
+  color: #1A332B;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.about-title-muted {
+  color: #9CA3AF;
+}
+
+/* Subtitle */
+.about-subtitle {
+  font-size: 18px;
+  color: #6B7280;
+  margin-bottom: 60px;
+}
+
+/* Images */
+.about-images {
+  width: 100%;
+}
+
+.about-images img {
+  width: 100%;
+  height: auto;
+}
+
+/* Mission Statement Section */
+.about-mission {
+  background: #F5F7F5;
+  padding: 100px 0 120px;
+  text-align: center;
+}
+
+.mission-icon {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 40px;
+}
+
+.mission-icon img {
+  width: 72px;
+  height: 72px;
+}
+
+.mission-text {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 32px;
+  line-height: 1.5;
+  padding: 0 24px;
+}
+
+.mission-dark {
+  color: #1A332B;
+  font-weight: 500;
+}
+
+.mission-grey {
+  color: #9CA3AF;
+  font-weight: 400;
+}
+
+/* Founders Section */
+.about-founders {
+  background: #F5F7F5;
+  padding: 100px 0;
+}
+
+.founders-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 60px;
+  align-items: start;
+}
+
+.founders-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.founders-badge-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1A332B;
+}
+
+.founders-title {
+  font-size: 48px;
+  font-weight: 600;
+  color: #1A332B;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.founders-header-right p {
+  font-size: 16px;
+  color: #6B7280;
+  line-height: 1.7;
+}
+
+.founders-header-right strong {
+  color: #1A332B;
+  font-weight: 600;
+}
+
+/* Founders Cards */
+.founders-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.founder-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.founder-image {
+  background: #E8EDEB;
+  height: 350px;
+  overflow: hidden;
+}
+
+.founder-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.founder-info {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.founder-info h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1A332B;
+  margin-bottom: 4px;
+}
+
+.founder-info p {
+  font-size: 14px;
+  color: #6B7280;
+  line-height: 1.4;
+}
+
+.linkedin-btn {
+  width: 40px;
+  height: 40px;
+  background: #1A332B;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.linkedin-btn:hover {
+  background: #0f1f1a;
+}
+
+@media (max-width: 1024px) {
+  .founders-header {
+    grid-template-columns: 1fr;
+  }
+
+  .founders-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Philosophy Section */
+.about-philosophy {
+  background: #F5F7F5;
+  padding: 0 0 120px;
+}
+
+.philosophy-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.philosophy-left {
+  background: #1A332B;
+  border-radius: 24px;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.philosophy-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 32px;
+  width: fit-content;
+}
+
+.philosophy-badge-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.philosophy-badge-text {
+  background: white;
+  border-radius: 100px;
+  padding: 6px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1A332B;
+}
+
+.philosophy-title {
+  font-size: 48px;
+  font-weight: 600;
+  color: white;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+
+.philosophy-title-muted {
+  color: #6B7280;
+}
+
+.philosophy-subtitle {
+  font-size: 16px;
+  color: #9CA3AF;
+  line-height: 1.7;
+  max-width: 480px;
+}
+
+.philosophy-right {
+  background: #D4FF73;
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.philosophy-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Values Section */
+.about-values {
+  background: #F5F7F5;
+  padding: 100px 0 120px;
+}
+
+.values-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px;
+  padding: 0 24px;
+}
+
+.values-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 24px;
+}
+
+.values-badge-icon {
+  width: 32px;
+  height: 32px;
+  background: #D4FF73;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.values-badge-icon img {
+  width: 18px;
+  height: 18px;
+}
+
+.values-badge-text {
+  background: white;
+  border-radius: 100px;
+  padding: 6px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1A332B;
+}
+
+.values-title {
+  font-size: 48px;
+  font-weight: 600;
+  color: #1A332B;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+
+.values-subtitle {
+  font-size: 16px;
+  color: #6B7280;
+  line-height: 1.7;
+}
+
+.values-cards {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.value-card {
+  background: white;
+  border-radius: 24px;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  min-height: 380px;
+}
+
+.value-card h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1A332B;
+  margin-bottom: 12px;
+}
+
+.value-card p {
+  font-size: 16px;
+  color: #6B7280;
+  line-height: 1.5;
+}
+
+.value-icon {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.value-icon svg {
+  opacity: 0.8;
+}
+
+/* CTA Section */
+.about-cta {
+  background: #F5F7F5;
+  padding: 120px 0;
+}
+
+.about-cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.about-cta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 32px;
+}
+
+.about-cta-badge-icon {
+  width: 36px;
+  height: 36px;
+  background: #D4FF73;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-cta-badge-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.about-cta-badge-text {
+  background: white;
+  border-radius: 100px;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1A332B;
+}
+
+.about-cta-title {
+  font-size: 56px;
+  font-weight: 600;
+  color: #9CA3AF;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+
+.about-cta-subtitle {
+  font-size: 18px;
+  color: #6B7280;
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+
+.about-cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.about-cta-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+}
+
+.about-cta-btn-primary span {
+  background: #1A332B;
+  color: white;
+  padding: 16px 28px;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.about-cta-btn-arrow {
+  width: 52px;
+  height: 52px;
+  background: #D4FF73;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -4px;
+  color: #1A332B;
+}
+
+.about-cta-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #D4FF73;
+  color: #1A332B;
+  padding: 16px 28px;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.about-cta-btn-secondary:hover {
+  background: #c4ef63;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .philosophy-container {
+    grid-template-columns: 1fr;
+  }
+
+  .philosophy-left {
+    padding: 40px;
+  }
+
+  .philosophy-title {
+    font-size: 36px;
+  }
+
+  .values-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .values-title {
+    font-size: 36px;
+  }
+
+  .about-cta-title {
+    font-size: 36px;
+  }
+
+  .about-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 42px;
+  }
+
+  .about-hero {
+    padding: 80px 0 0;
+  }
+
+  .about-images {
+    flex-direction: column;
+  }
+
+  .about-image-left,
+  .about-image-right,
+  .about-image-center {
+    flex: none;
+  }
+
+  .about-image-left img,
+  .about-image-center img,
+  .about-image-right img {
+    height: 300px;
+  }
+}
