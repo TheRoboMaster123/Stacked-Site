@@ -22,7 +22,12 @@ const Header = () => {
         
         <nav className="nav">
           <Link to="#" className="nav-item has-dropdown">Products</Link>
-          <Link to="#" className="nav-item has-dropdown">Solutions</Link>
+          <div className="nav-dropdown-wrapper">
+            <span className="nav-item has-dropdown">Solutions</span>
+            <div className="nav-dropdown">
+              <Link to="/partners" className="nav-dropdown-item">Partners</Link>
+            </div>
+          </div>
           <Link to="#" className="nav-item has-dropdown">AI Agents</Link>
           <Link to="/integrations" className="nav-item">Integration</Link>
           <Link to="#" className="nav-item has-dropdown">Pricing</Link>
