@@ -1,0 +1,124 @@
+/* Integration Page Styles */
+
+.integration-page {
+  background-color: #F5F7F5;
+}
+
+/* Hero Section */
+.integration-hero {
+  position: relative;
+  width: 100%;
+  min-height: 728px;
+  padding: 120px 0 80px;
+  background: linear-gradient(180deg, #000000 0%, #1A332B 100%);
+  overflow: visible;
+}
+
+/* Dots overlay */
+.integration-dots {
+  position: absolute;
+  width: 2663.76px;
+  height: 652px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -224px;
+  background: url('/integration-dots.png') center center / contain no-repeat;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.integration-hero > .max-w-6xl {
+  position: relative;
+  z-index: 2;
+}
+
+/* Badge */
+.integration-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 32px;
+}
+
+.integration-badge-text {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+
+/* Title */
+.integration-title {
+  font-size: 72px;
+  font-weight: 600;
+  color: white;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.integration-title em {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Subtitle */
+.integration-subtitle {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  margin-bottom: 60px;
+}
+
+/* Integration Diagram */
+.integration-diagram {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.integration-diagram img {
+  width: 100%;
+  height: auto;
+}
+
+/* Cards Section */
+.integration-cards-section {
+  background-color: #F5F7F5;
+}
+
+.integration-card {
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid #E5E7EB;
+  transition: box-shadow 0.3s ease;
+}
+
+.integration-card:hover {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .integration-title {
+    font-size: 48px;
+  }
+
+  .integration-diagram {
+    height: 400px;
+  }
+
+  .integration-center-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .integration-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
