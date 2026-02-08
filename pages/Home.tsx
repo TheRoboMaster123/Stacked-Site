@@ -415,6 +415,10 @@ const WhyStackedSection = () => (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Section Header - Above Everything */}
             <div className="why-stacked-header">
+                <div className="why-stacked-badge">
+                    <img src="/stacked-icon.png" alt="" className="w-8 h-8" />
+                    <span className="why-stacked-badge-text">Why Stacked?</span>
+                </div>
                 <h2 className="why-stacked-title">
                     Unified AI Infrastructure<br/>for Lending
                 </h2>
@@ -496,10 +500,8 @@ const StackedCoreSection = () => (
             {/* Section Header */}
             <div className="text-center mb-8">
                 <div className="core-badge">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 0L9.79611 6.20389L16 8L9.79611 9.79611L8 16L6.20389 9.79611L0 8L6.20389 6.20389L8 0Z" fill="#D4FF73"/>
-                    </svg>
-                    <span>Stacked Core</span>
+                    <img src="/stacked-icon.png" alt="" className="w-8 h-8" />
+                    <span className="core-badge-text">Stacked Core</span>
                 </div>
                 <h2 className="core-title">
                     Meet Stacked Core,<br/>The Orchestration Layer
