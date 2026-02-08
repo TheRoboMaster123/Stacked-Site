@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 
 const Badge = ({ children, icon }: { children: React.ReactNode, icon?: React.ReactNode }) => (
-    <div className="inline-flex items-center gap-2 text-sm font-medium text-[#D4FF73] bg-[#D4FF73]/10 border border-[#D4FF73]/20 rounded-full px-4 py-1.5">
+    <div className="inline-flex items-center gap-0">
         {icon}
-        {children}
+        <span className="text-sm font-medium text-white/80 bg-white/10 rounded-full px-4 py-2">
+            {children}
+        </span>
     </div>
 );
 
@@ -45,7 +47,7 @@ const HeroSection = () => (
         </svg>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <Badge icon={<span>✦</span>}>
+            <Badge icon={<img src="/stacked-icon.png" alt="" className="w-8 h-8" />}>
                 Fast, Accurate, and Automated Lending
             </Badge>
 
