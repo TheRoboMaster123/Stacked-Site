@@ -745,6 +745,77 @@ const ResultsSection = () => (
     </section>
 );
 
+/* ============================================
+   TESTIMONIALS SECTION
+   ============================================ */
+
+const TestimonialsSection = () => (
+    <section className="testimonials-section">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Section Header */}
+            <div className="text-center mb-12">
+                <div className="testimonials-header-badge">
+                    <img src="/stacked-icon.png" alt="Stacked" className="testimonials-badge-icon" />
+                    <div className="testimonials-badge-pill">
+                        <span>Testimonials</span>
+                    </div>
+                </div>
+                <h2 className="testimonials-title">Trusted by Modern Lenders</h2>
+                <p className="testimonials-subtitle">See what modern lenders are saying about Stacked.</p>
+            </div>
+
+            {/* Testimonials Image */}
+            <div className="testimonials-image">
+                <img src="/testimonials-cards.png" alt="Customer testimonials" />
+            </div>
+        </div>
+    </section>
+);
+
+/* ============================================
+   CTA SECTION
+   ============================================ */
+
+const CTASection = () => (
+    <section className="cta-section">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            {/* Badge */}
+            <div className="cta-badge">
+                <img src="/stacked-icon.png" alt="Stacked" className="cta-badge-icon" />
+                <div className="cta-badge-pill">
+                    <span>Try Stacked Today</span>
+                </div>
+            </div>
+
+            {/* Heading */}
+            <h2 className="cta-title">Ready to Build Your Agentic Stack?</h2>
+
+            {/* Subtitle */}
+            <p className="cta-subtitle">
+                Start with the Core Pack or add Agents for intelligent oversight. The choice is yours. Join modern lenders and brokers building with the Agentic OS.
+            </p>
+
+            {/* CTA Button */}
+            <a href="#" className="cta-book-btn">
+                <div className="cta-book-text">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="4" width="16" height="14" rx="2" stroke="currentColor" strokeWidth="1.5"/>
+                        <path d="M2 8H18" stroke="currentColor" strokeWidth="1.5"/>
+                        <path d="M6 2V6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                        <path d="M14 2V6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                    </svg>
+                    <span>Book A Call</span>
+                </div>
+                <div className="cta-book-arrow">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 13L13 1M13 1H1M13 1V13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </section>
+);
+
 const Home = () => {
     return (
         <div>
@@ -754,6 +825,8 @@ const Home = () => {
             <WhyStackedSection />
             <StackedCoreSection />
             <ResultsSection />
+            <TestimonialsSection />
+            <CTASection />
         </div>
     );
 };

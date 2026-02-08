@@ -722,7 +722,7 @@
   padding: 100px 0 120px;
   text-align: center;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .stacked-core-section::before {
@@ -944,8 +944,9 @@
    ============================================ */
 
 .results-section {
-  background: #FFFFFF;
-  padding: 60px 0;
+  background: #F5F7F5;
+  padding: 120px 0 80px 0;
+  position: relative;
 }
 
 .results-grid {
@@ -1050,6 +1051,76 @@
   }
 }
 
+/* ============================================
+   TESTIMONIALS SECTION
+   ============================================ */
+
+.testimonials-section {
+  background: #F5F7F5;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonials-section .text-center {
+  position: relative;
+  z-index: 2;
+  padding-top: 80px;
+}
+
+.testimonials-header-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 20px;
+}
+
+.testimonials-badge-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.testimonials-badge-pill {
+  background: white;
+  border: 1px solid #E5E7EB;
+  border-radius: 100px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1A332B;
+}
+
+.testimonials-title {
+  font-size: 44px;
+  font-weight: 600;
+  color: #0A0F0D;
+  margin-bottom: 12px;
+}
+
+.testimonials-subtitle {
+  font-size: 16px;
+  color: #6B7280;
+}
+
+.testimonials-image {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  margin-top: -280px;
+}
+
+.testimonials-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .testimonials-title {
+    font-size: 32px;
+  }
+}
+
 /* Responsive Stacked Core */
 @media (max-width: 1024px) {
   .core-features {
@@ -1099,5 +1170,105 @@
   .core-feature-item {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+}
+
+/* ============================================
+   CTA SECTION
+   ============================================ */
+
+.cta-section {
+  background: #F5F7F5;
+  padding: 120px 0;
+  text-align: center;
+}
+
+.cta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 32px;
+}
+
+.cta-badge-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.cta-badge-pill {
+  background: white;
+  border-radius: 100px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1A332B;
+}
+
+.cta-title {
+  font-size: 64px;
+  font-weight: 600;
+  background: linear-gradient(180deg, #0A0F0D 0%, rgba(10, 15, 13, 0.4) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.cta-subtitle {
+  font-size: 18px;
+  color: #6B7280;
+  max-width: 700px;
+  margin: 0 auto 48px;
+  line-height: 1.6;
+}
+
+.cta-book-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.cta-book-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #183D35;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 16px 24px;
+  border-radius: 100px;
+}
+
+.cta-book-text svg {
+  color: white;
+}
+
+.cta-book-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: #183D35;
+  border-radius: 50%;
+  color: white;
+}
+
+.cta-book-btn:hover .cta-book-text,
+.cta-book-btn:hover .cta-book-arrow {
+  background: #1f4a40;
+}
+
+@media (max-width: 768px) {
+  .cta-title {
+    font-size: 40px;
+  }
+  
+  .cta-subtitle {
+    font-size: 16px;
   }
 }
