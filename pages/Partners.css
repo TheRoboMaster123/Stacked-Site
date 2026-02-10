@@ -721,7 +721,7 @@
   font-weight: 500;
 }
 
-.partners-cta-arrow {
+.partners-cta-btn .partners-cta-arrow {
   width: 48px;
   height: 48px;
   background: #1a332b;
@@ -732,7 +732,7 @@
   margin-left: -4px;
 }
 
-.partners-cta-arrow svg {
+.partners-cta-btn .partners-cta-arrow svg {
   stroke: #e1fcad;
 }
 
