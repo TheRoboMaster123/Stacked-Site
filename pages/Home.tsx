@@ -681,23 +681,8 @@ const ResultsSection = () => (
 
 const TestimonialsSection = () => (
     <section className="testimonials-section">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            {/* Section Header */}
-            <div className="text-center mb-12">
-                <div className="testimonials-header-badge">
-                    <img src="/stacked-icon.png" alt="Stacked" className="testimonials-badge-icon" />
-                    <div className="testimonials-badge-pill">
-                        <span>Testimonials</span>
-                    </div>
-                </div>
-                <h2 className="testimonials-title">Trusted by Modern Lenders</h2>
-                <p className="testimonials-subtitle">See what modern lenders are saying about Stacked.</p>
-            </div>
-
-            {/* Testimonials Image */}
-            <div className="testimonials-image">
-                <img src="/testimonials-cards.png" alt="Customer testimonials" />
-            </div>
+        <div className="testimonials-image">
+            <img src="/testimonials-cards.png" alt="Customer testimonials" />
         </div>
     </section>
 );
