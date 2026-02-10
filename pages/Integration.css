@@ -2,34 +2,17 @@
 
 .integration-page {
   background-color: #F5F7F5;
+  overflow-x: hidden;
 }
 
 /* Hero Section */
 .integration-hero {
   position: relative;
   width: 100%;
-  min-height: 728px;
+  min-height: 900px;
   padding: 120px 0 80px;
-  background: linear-gradient(180deg, #000000 0%, #1A332B 100%);
-  overflow: visible;
-}
-
-/* Dots overlay */
-.integration-dots {
-  position: absolute;
-  width: 2663.76px;
-  height: 652px;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -224px;
-  background: url('/integration-dots.png') center center / contain no-repeat;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.integration-hero > .max-w-6xl {
-  position: relative;
-  z-index: 2;
+  background: url('/Group 62.png') center center / cover no-repeat;
+  overflow: hidden;
 }
 
 /* Badge */

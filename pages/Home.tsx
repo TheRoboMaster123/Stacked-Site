@@ -748,7 +748,7 @@ const CTASection = () => (
 
 const Home = () => {
     return (
-        <div>
+        <div className="home-page">
             <HeroSection />
             <MeetStackedSection />
             <PacksSection />

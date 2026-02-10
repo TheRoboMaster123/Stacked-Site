@@ -6,9 +6,6 @@ const Integration = () => {
     <div className="integration-page">
       {/* Hero Section */}
       <section className="integration-hero">
-        {/* Dots overlay */}
-        <div className="integration-dots"></div>
-        
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Badge */}
           <div className="integration-badge">
@@ -27,12 +24,6 @@ const Integration = () => {
             Connect Stacked with your favorite tools to automate tasks, sync data, and<br />
             keep your entire workflow running in perfect harmony.
           </p>
-
-        </div>
-        
-        {/* Integration Diagram - positioned absolutely */}
-        <div className="integration-diagram">
-          <img src="/Elements.png" alt="Integration Elements" />
         </div>
       </section>
 
