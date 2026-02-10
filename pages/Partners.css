@@ -50,7 +50,7 @@
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.6;
   max-width: 900px;
-  margin: 0 auto 40px;
+  margin: 0 auto 20px;
 }
 
 /* Buttons */
@@ -75,7 +75,7 @@
 }
 
 .partners-cta-button span {
-  background: #D4FF73;
+  background: #e1fcad;
   color: #1A332B;
   padding: 14px 24px;
   border-radius: 100px;
@@ -86,7 +86,7 @@
 .partners-cta-arrow {
   width: 48px;
   height: 48px;
-  background: #D4FF73;
+  background: #e1fcad;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -290,7 +290,7 @@
 .built-title {
   font-size: 48px;
   font-weight: 600;
-  color: #9CA3AF;
+  color: #0A0F0D;
   line-height: 1.2;
   margin-bottom: 20px;
   letter-spacing: -0.02em;
@@ -381,7 +381,7 @@
 .why-partner-title {
   font-size: 48px;
   font-weight: 600;
-  color: #9CA3AF;
+  color: #0A0F0D;
   line-height: 1.2;
   margin-bottom: 16px;
   letter-spacing: -0.02em;
@@ -448,7 +448,7 @@
 
 /* Estimate Payouts Section */
 .partners-payouts-section {
-  background: #F5F7F5;
+  background: url('/Estimate Your Payouts Background.png') center center / cover no-repeat;
   padding: 100px 0;
 }
 
@@ -465,19 +465,18 @@
 }
 
 .payouts-badge-text {
-  background-color: white;
-  border: 1px solid #E5E7EB;
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 100px;
   padding: 8px 16px;
   font-size: 14px;
   font-weight: 500;
-  color: #1A332B;
+  color: white;
 }
 
 .payouts-title {
   font-size: 56px;
   font-weight: 600;
-  color: #1A332B;
+  color: white;
   line-height: 1.1;
   margin-bottom: 16px;
   letter-spacing: -0.02em;
@@ -485,7 +484,7 @@
 
 .payouts-subtitle {
   font-size: 18px;
-  color: #6B7280;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .payouts-grid {
@@ -502,21 +501,21 @@
 
 .payouts-paragraph {
   font-size: 16px;
-  color: #6B7280;
+  color: rgba(255, 255, 255, 0.7);
   line-height: 1.6;
   margin-bottom: 32px;
 }
 
 .payouts-paragraph strong {
-  color: #1A332B;
+  color: white;
   font-weight: 600;
 }
 
 .payouts-table-wrapper {
-  background: white;
+  background: rgba(26, 51, 43, 0.8);
   border-radius: 16px;
   overflow: hidden;
-  border: 1px solid #E5E7EB;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .payouts-table {
@@ -525,8 +524,8 @@
 }
 
 .payouts-table th {
-  background: #1A332B;
-  color: white;
+  background: rgba(26, 51, 43, 0.9);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
   font-weight: 600;
   padding: 20px 24px;
@@ -534,15 +533,15 @@
 }
 
 .payouts-table td {
-  color: #1A332B;
+  color: rgba(255, 255, 255, 0.8);
   font-size: 15px;
   padding: 20px 24px;
-  border-top: 1px solid #E5E7EB;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .payouts-disclaimer {
   font-size: 14px;
-  color: #6B7280;
+  color: rgba(255, 255, 255, 0.5);
   line-height: 1.6;
   text-align: right;
 }
@@ -587,7 +586,7 @@
 .who-title {
   font-size: 48px;
   font-weight: 600;
-  color: #9CA3AF;
+  color: #0A0F0D;
   line-height: 1.2;
   margin-bottom: 16px;
   letter-spacing: -0.02em;
@@ -682,7 +681,7 @@
   font-size: 56px;
   font-weight: 500;
   font-style: italic;
-  color: #9CA3AF;
+  color: #0A0F0D;
   line-height: 1.2;
   margin-bottom: 24px;
   letter-spacing: -0.02em;
@@ -714,8 +713,8 @@
 }
 
 .partners-cta-btn span {
-  background: #1A332B;
-  color: white;
+  background: #1a332b;
+  color: #e1fcad;
   padding: 14px 24px;
   border-radius: 100px;
   font-size: 16px;
@@ -725,12 +724,16 @@
 .partners-cta-arrow {
   width: 48px;
   height: 48px;
-  background: #1A332B;
+  background: #1a332b;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: -4px;
+}
+
+.partners-cta-arrow svg {
+  stroke: #e1fcad;
 }
 
 .partners-cta-link {
